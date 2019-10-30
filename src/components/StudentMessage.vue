@@ -5,7 +5,7 @@
 				{{message}} {{name}}
 			</div>
 		</transition>
-	<div>
+	</div>
 </template>
 
 <script>
@@ -35,6 +35,6 @@ export default{
 		transition: opacity .5s;
 	}
 	.fade-enter, .fade-leave-to {
-		opacity: 1;
+		opacity: 0;
 	}
 </style>
