@@ -4,7 +4,7 @@
 		<td> {{ student.starID }} </td>
 		<td> <input type="checkbox" v-model="student.present" v-on:change="checked(student)"></td>
 		<td v-show="edit"> 
-			<button id="delete-button">x</button>
+			<button id="delete-button" v-on:click="deleteStudent(student)">x</button>
 		</td>
 	</tr>
 </template>
@@ -22,6 +22,7 @@ export default {
 		},
 		deleteStudent(student){
 			if(confirm(`Delete ${student.name}?`)){
+				console.log("Row")
 				this.$emit("delete-student", student)
 			}
 		}

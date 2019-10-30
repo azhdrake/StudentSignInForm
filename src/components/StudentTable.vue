@@ -45,6 +45,7 @@
 				this.$emit("student-present", student)
 			},
 			studentDeleted(student){
+				console.log("table")
 				this.$emit("delete-student", student)
 			}
 		}

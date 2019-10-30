@@ -39,6 +39,7 @@ export default {
 		this.name = student.name
 	},
 	studentDeleted(student){
+		console.log("app")
 		this.students = this.students.filter( function(s) {return s != student})
 	}
   }
